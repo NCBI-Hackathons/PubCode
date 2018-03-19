@@ -1,0 +1,15 @@
+FROM node:8-alpine
+
+ARG SOURCE_FOLDER="./server"
+WORKDIR "/server"
+
+# Install dependencies
+RUN npm i
+
+# Copy the source file
+COPY ${SOURCE_FOLDER} .
+
+# Start the express server
+ENTRYPOINT ["node", "server"]
+
+EXPOSE 5000
