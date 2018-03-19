@@ -4,18 +4,18 @@
 
 CREATE TABLE public.pubcode_table1
 (
-    "PubCode_ID" "char" NOT NULL,
-    "PubMed_ID" "char" NOT NULL,
-    "Code_Publication_Date" "char" NOT NULL,
-    "Authors" "char" NOT NULL,
-    "Programming_Language" "char",
-    "OS" "char",
-    "Dependencies_and_Versions" "char",
-    "Licensing" "char",
-    "Keywords" "char",
-    "Dataset_IDs" "char",
-    "Access" "char",
-    "Reproducibility_Score" integer,
+    PubCode_ID character varying COLLATE pg_catalog."default" NOT NULL,
+    PubMed_ID character varying COLLATE pg_catalog."default" NOT NULL,
+    Code_Publication_Date character varying COLLATE pg_catalog."default" NOT NULL,
+    Authors "char" character varying COLLATE pg_catalog."default" NOT NULL,
+    Programming_Language character varying COLLATE pg_catalog."default" NOT NULL,
+    OS character varying COLLATE pg_catalog."default" NOT NULL,
+    Dependencies_and_Versions character varying COLLATE pg_catalog."default",
+    Licensing character varying COLLATE pg_catalog."default",
+    Keywords character varying COLLATE pg_catalog."default",
+    Dataset_IDs character varying COLLATE pg_catalog."default",
+    Access character varying COLLATE pg_catalog."default",
+    Reproducibility_Score character varying COLLATE pg_catalog."default",
     CONSTRAINT pubcode_table1_pkey PRIMARY KEY ("PubCode_ID")
 )
 WITH (
