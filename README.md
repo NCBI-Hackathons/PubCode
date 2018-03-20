@@ -1,4 +1,4 @@
-![banner](img/banner.png)
+![banner](img/banner1.png)
 ---
 # PubCode - make this a link to the site!
 ## A Platform for the Scientific Community
