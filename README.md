@@ -1,4 +1,4 @@
-# :book: :computer: PubCode
-## **Linking code with publications**
-
-The primary goal of PubCode is improve the accessibility of code supported by NIH funding by presenting the code alongside its publication, while also motivating the authors to continue developing their work. 
+# PubCode :book: :computer: 
+**Linking code with publications**
+---  
+PubCode is a prototype platform for developers to present their code in a formal environment, while showcasing useful metadata for researchers regarding the development, upkeep, and activity levels of their code to prospective users.  Enhancing the users search for an appropriate tool for their given task provides an incentive to cite of these open source tools, providing further interest in both its use and further development.  
