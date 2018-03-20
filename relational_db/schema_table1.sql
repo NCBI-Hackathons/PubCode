@@ -7,7 +7,7 @@ CREATE TABLE public.pubcode_table1
     PubCode_ID character varying COLLATE pg_catalog."default" NOT NULL,
     PubMed_ID character varying COLLATE pg_catalog."default" NOT NULL,
     Code_Publication_Date character varying COLLATE pg_catalog."default" NOT NULL,
-    Authors "char" character varying COLLATE pg_catalog."default" NOT NULL,
+    Authors character varying COLLATE pg_catalog."default" NOT NULL,
     Programming_Language character varying COLLATE pg_catalog."default" NOT NULL,
     OS character varying COLLATE pg_catalog."default" NOT NULL,
     Dependencies_and_Versions character varying COLLATE pg_catalog."default",
