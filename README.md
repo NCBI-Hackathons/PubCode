@@ -1,5 +1,6 @@
-![banner](img/banner.png)
-![banner](img/banner2.png)
+![](img/banner.png)
+
+![](img/banner2.png)
 
 # PubCode :book: :computer:
 **A Platform for the Scientific Community**
