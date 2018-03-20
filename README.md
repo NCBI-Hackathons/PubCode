@@ -1,4 +1,5 @@
 ![banner](img/banner.png)
+![banner](img/banner2.png)
 
 # PubCode :book: :computer:
 **A Platform for the Scientific Community**
