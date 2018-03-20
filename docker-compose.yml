@@ -11,7 +11,7 @@ services:
 
   server:
     container_name: server
-    image: ./server
+    image: sunnielyu/pubcode-server
     ports:
       - 5000:5000
     links:
