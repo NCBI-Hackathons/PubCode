@@ -11,7 +11,7 @@ services:
 
   server:
     container_name: server
-    image: ./Dockerfile.server
+    image: ./server
     ports:
       - 5000:5000
     links:
@@ -19,6 +19,6 @@ services:
 
   web:
     container_name: web
-    image: ./Dockerfile.web
+    image: ./ui
     ports:
       - 8000:8000
