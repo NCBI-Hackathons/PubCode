@@ -2,11 +2,11 @@
   "name": "pubcode",
   "version": "1.0.0",
   "description": "Web platform for advertising data science applications",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docker": "docker-compose up .",
-    "start": "node server/app"
+    "start": "node app"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "knex": "^0.14.4",
+    "lodash": "^4.17.5",
     "method-override": "^2.3.10",
     "pg": "^7.4.1"
   }
