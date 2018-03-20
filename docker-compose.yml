@@ -11,14 +11,14 @@ services:
 
   server:
     container_name: server
-    image: ./server
+    image: sunnielyu/pubcode-server
     ports:
       - 5000:5000
     links:
       - db:db
 
-  web:
-    container_name: web
-    image: ./ui
-    ports:
-      - 8000:8000
+#  web:
+#    container_name: web
+#    image: ./ui
+#    ports:
+#      - 8000:8000
