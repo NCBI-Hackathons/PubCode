@@ -1,15 +1,15 @@
 FROM node:8-alpine
 
-ARG SOURCE_FOLDER="./server"
+ARG SOURCE_FOLDER="./"
 WORKDIR "/server"
-
-# Install dependencies
-RUN npm i
 
 # Copy the source file
 COPY ${SOURCE_FOLDER} .
 
+# Install dependencies
+RUN npm i
+
 # Start the express server
-ENTRYPOINT ["node", "server"]
+ENTRYPOINT ["node", "app"]
 
 EXPOSE 5000
