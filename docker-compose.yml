@@ -17,8 +17,8 @@ services:
     links:
       - db:db
 
-#  web:
-#    container_name: web
-#    image: ./ui
-#    ports:
-#      - 8000:8000
+  web:
+    container_name: web
+    image: ./ui
+    ports:
+      - 8000:8000
