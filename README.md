@@ -1,6 +1,3 @@
-![](img/banner.png)
-
-![](img/banner2.png)
 
 # PubCode :book: :computer:
 **A Platform for the Scientific Community**
@@ -30,4 +27,10 @@ Computational analysis of biological and clinical data is becoming more importan
 - Uniqueness
   - Determined by clustering similar codes
 
+## Search interface
 
+![](img/banner.png)
+
+## Search results
+
+![](img/banner2.png)
