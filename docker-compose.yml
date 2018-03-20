@@ -9,14 +9,14 @@ services:
 
   server:
     container_name: server
-    image: sunnielyu/pubcode-server:1.0.2
+    image: sunnielyu/pubcode-server
     ports:
       - 5000:5000
     links:
       - db:db
 
-#  web:
-#    container_name: web
-#    image: ./ui
-#    ports:
-#      - 8000:8000
+  web:
+    container_name: web
+    image: sunnielyu/pubcode-web
+    ports:
+      - 8000:8000
