@@ -4,7 +4,6 @@
 
 CREATE TABLE public.pubcode_table1
 (
-    (
     "CodeTitle" character varying(20) COLLATE pg_catalog."default" NOT NULL,
     "PCID" character varying(20) COLLATE pg_catalog."default" NOT NULL,
     "PMID" character varying(20) COLLATE pg_catalog."default",
