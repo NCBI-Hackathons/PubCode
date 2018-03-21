@@ -24,15 +24,19 @@ At this moment, PubCode demos a selection of software with both scientific publi
 
 ---
 
-## Viewing how a group of software compares over time
-
-[<img src="img/Figure2B-UIndex.jpg">](site.link)
-
-https://github.com/NCBI-Hackathons/PubCode/blob/master/TestCode/ExampleInteractiveLinesPlots.html
+[<img src="img/pubcode-results.png">](site.link)
 
 ---
 
-[<img src="img/pubcode-results.png">](site.link)
+## Viewing how a group of software compares over time
+
+A recent article indexing software impact over time using u-Index showed line plots that were static and could be difficult to zoom into the details.
+
+[<img src="img/Figure2B-UIndex.jpg">](site.link)
+
+We recreated similar plots demonstrating software impact over time using interactive line plots that allow users to hover and retrieve information as well as zooming and panning functionality.
+
+https://github.com/NCBI-Hackathons/PubCode/blob/master/TestCode/ExampleInteractiveLinesPlots.html
 
 ---
 
