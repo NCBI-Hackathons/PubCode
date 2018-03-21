@@ -26,7 +26,7 @@ At this moment, PubCode demos a selection of software with both scientific publi
 
 ## Viewing how a group of software compares over time
 
-<TestCode/ExampleInteractiveLinePlots.html>
+https://github.com/NCBI-Hackathons/PubCode/blob/master/TestCode/ExampleInteractiveLinesPlots.html
 
 ---
 
