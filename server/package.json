@@ -1,0 +1,29 @@
+{
+  "name": "pubcode",
+  "version": "1.0.0",
+  "description": "Web platform for advertising data science applications",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker": "docker-compose up .",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NCBI-Hackathons/AppPlatform.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NCBI-Hackathons/AppPlatform/issues"
+  },
+  "homepage": "https://github.com/NCBI-Hackathons/AppPlatform#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "knex": "^0.14.4",
+    "lodash": "^4.17.5",
+    "method-override": "^2.3.10",
+    "pg": "^7.4.1"
+  }
+}

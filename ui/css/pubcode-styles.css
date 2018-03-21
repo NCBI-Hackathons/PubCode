@@ -1,0 +1,97 @@
+body.results, body.entry { background-image: url(../img/code-rain.png);
+    background-repeat: repeat-x;
+    background-size: 40%;}
+header {
+    background: #205493;
+    padding:0.3em 0;}
+header img { width:300px;}
+header { display:none; } /* removes NLM logo */ 
+.usa-width-two-thirds:first-child>:first-child {margin: .67em 0;}
+
+section { margin-bottom:3em;overflow:hidden;}
+section.search-box {
+    background: #112e51;
+    background-image: url(../img/code-rain.png);
+    background-repeat: repeat-x;
+    background-size: 30%;
+    background-blend-mode: difference;
+    height:40vh;
+    text-align: center;
+    color:#fff;
+    padding:15vh;
+    margin-bottom:0}
+section.search-box h1 {
+    display: inline-block;}
+section.search-box h2 {
+    font-weight: 100; 
+    vertical-align: bottom;
+    opacity:0.5;
+    font-family: "Source Sans Pro", Arial, sans-serif;}    
+section.action-bar {
+    background: #e1f3f8;
+    padding:2em 0;}    
+section.action-bar h2 {
+    display:inline-block;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size:1em;
+    margin-right:1em;}
+section.features > div {
+    margin:2em;
+    padding:1em 3em;
+    overflow:hidden;}
+section.features > div:nth-child(2) {
+    border-top: 2px dashed #ccc;
+    border-bottom: 2px dashed #ccc;
+}  
+section.features .usa-width-two-thirds h4 { margin-top:3em;}        
+.code-summary {
+    background-color: #ffffff;
+    border: 1px solid #e4e4e4;
+    box-shadow:1px 3px 2px rgba(50, 58, 69, 0.2);
+    padding:1em 1.2em;
+    margin-bottom: 1em; }        
+.code-summary h2 {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 1.4em;
+    margin-top:0;}
+.code-summary h2 a { text-decoration: none;}
+.entry .usa-grid {background: #fff;}
+.entry img {padding:5px;}
+.entry .usa-width-one-whole:first-child>:first-child {
+    margin-bottom: .5em;
+    margin-top: 1.5em;}
+.entry dl.metadata {
+    margin-bottom:2em;
+    overflow:hidden;}    
+.entry .metadata dd, .entry .metadata dt { 
+    float:left; 
+    margin:3px;}
+.entry .metadata dt {
+    font-weight: bold;
+    clear:left; 
+    width:110px;}
+.entry .pubmed-list a {
+    font-weight: bold;
+    text-decoration: none;
+    display: block;}
+.entry .pubmed-list dt {font-weight: bold; }
+.entry .usa-accordion-bordered>li {overflow:hidden;}
+.search-results li {display:inline-block; 
+    margin-right:25px;}
+.keywords span { background: #e1f3f8; 
+    border-radius:3px; 
+    padding:3px 5px; 
+    margin: 5px 3px 5px 0; 
+    display: inline-block;}
+/* utility classes */
+.alignRight { float:right;}
+.alignLeft { float:left;}
+.icon {color:#0071bc; font-size:1em;}
+.gray {color:#ccc;}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;}
