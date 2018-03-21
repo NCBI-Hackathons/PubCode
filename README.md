@@ -44,12 +44,12 @@ At this moment, PubCode demos a selection of software with both scientific publi
 ---
 
 ## PubCode Team  
-[Anna Salvador](github.com/annacsalvador)  
+[Michael Chambers](github.com/greenkidneybean) (Team Writer)
+[Sean Maden](github.com/metamaden)
 [Aynex Mercado](github.com/aynexm)  
-[Lindsay Rutter](github.com/lrutter)  
-[Michael Chambers](github.com/greenkidneybean)  
-[Sean Maden](github.com/metamaden)  
-[Sunny Yu](github.com/sunnielyu)  
+[Lindsay Rutter](github.com/lrutter) (Team Lead)
+[Anna Salvador](github.com/annacsalvador)  
+[Sunny Yu](github.com/sunnielyu) (System Administrator)
 
 ---
 
