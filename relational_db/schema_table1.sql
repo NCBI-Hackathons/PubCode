@@ -4,19 +4,25 @@
 
 CREATE TABLE public.pubcode_table1
 (
-    PubCode_ID character varying COLLATE pg_catalog."default" NOT NULL,
-    PubMed_ID character varying COLLATE pg_catalog."default" NOT NULL,
-    Code_Publication_Date character varying COLLATE pg_catalog."default" NOT NULL,
-    Authors character varying COLLATE pg_catalog."default" NOT NULL,
-    Programming_Language character varying COLLATE pg_catalog."default" NOT NULL,
-    OS character varying COLLATE pg_catalog."default" NOT NULL,
-    Dependencies_and_Versions character varying COLLATE pg_catalog."default",
-    Licensing character varying COLLATE pg_catalog."default",
-    Keywords character varying COLLATE pg_catalog."default",
-    Dataset_IDs character varying COLLATE pg_catalog."default",
-    Access character varying COLLATE pg_catalog."default",
-    Reproducibility_Score character varying COLLATE pg_catalog."default",
-    CONSTRAINT pubcode_table1_pkey PRIMARY KEY ("PubCode_ID")
+    "CodeTitle" character varying(20) COLLATE pg_catalog."default" NOT NULL,
+    "PCID" character varying(20) COLLATE pg_catalog."default" NOT NULL,
+    "PMID" character varying(20) COLLATE pg_catalog."default",
+    "PMCID" character varying(20) COLLATE pg_catalog."default",
+    "PaperPubDate" date,
+    "CodePubDate" date,
+    "Authors" character varying(500) COLLATE pg_catalog."default" NOT NULL,
+    "CodeLanguage" character varying(50) COLLATE pg_catalog."default",
+    "OS" character varying(20) COLLATE pg_catalog."default",
+    "Dependencies" character varying(500) COLLATE pg_catalog."default",
+    "Licensing" character varying(20) COLLATE pg_catalog."default",
+    "Keywords" character varying(500) COLLATE pg_catalog."default",
+    "Dataset_IDs" character varying(20) COLLATE pg_catalog."default",
+    "GitHub_URL" character varying(50) COLLATE pg_catalog."default",
+    "GH_Forks" integer,
+    "GH_OpenIssues" integer,
+    "GH_ClosedIssues" integer,
+    "GH_DateUpdate" date,
+    CONSTRAINT "pubcode_table1_pkey" PRIMARY KEY ("CodeTitle", "PCID")
 )
 WITH (
     OIDS = FALSE
