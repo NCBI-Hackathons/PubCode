@@ -7,9 +7,11 @@
 
 <link href="css/uswds.min.css" rel="stylesheet">
 <link href="css/pubcode-styles.css" rel="stylesheet">
+
+<script src="home.js"></script>
 </head>
 <body>
-   <header>
+    <header>
         <div class="usa-grid">
             <img src="img/ncbi-logo.png" alt="NCBI" />  
         </div>      
@@ -20,13 +22,13 @@
             </div>
             <div class="usa-width-three-thirds">
             <div role="search">
-                <form class="usa-search usa-search-big">
+                <div class="usa-search usa-search-big">
                     <label class="usa-sr-only" for="search-field-big">Search PubCode</label>
                     <input id="search-field-big" type="search" name="search">
-                    <button type="submit">
+                    <button onclick="search()">
                         <span class="usa-search-submit-text">Search</span>
                     </button>
-                </form>
+                </div>
             </div>
             </div>
             <h2>Find &middot; Cite &middot; Download Scientific Code.</h2>

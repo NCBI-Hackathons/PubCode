@@ -48,6 +48,27 @@ At this moment, PubCode demos a selection of software with both scientific publi
 - Closed Issues
 
 ---
+## Future Directions
+Integration of a quality metric will require designation of attributes that indicate a code will be “successful”.
+- Citations/Year for various sequence aligners
+- Literature highlighting Bowtie v Bowtie2
+- u-INDEX Callahan et al. (2018)
+
+## Development and Installation Instructions
+
+### Using Docker
+1. Install the Docker Community Edition (CE).
+2. Start the docker daemon.
+3. Copy the [docker-compose.yml](docker-compose.yml) file to your local computer.
+4. Run the command `docker-compose up`.
+5. Access the home page of PubCode through "localhost:8000/index.html".
+6. The postgreSQL database is accessible through port 5432 on localhost.
+
+### Development Instructions
+#### Backend Server
+- All server code is contained with the [server](server) folder and is based in nodejs.
+- Once in the server folder, run `npm i` to install all dependencies.
+- Use `npm start run` to start the Express server locally. The backend server is accessible through "localhost:5000".
 
 ## PubCode Team  
 [Michael Chambers](https://github.com/greenkidneybean) (Team Writer)  
