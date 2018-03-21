@@ -1,4 +1,8 @@
-# This script creates an interactie line plot for citations per year for a cluster of papers
+# This script creates an interactive line plot for citations per year for a cluster of papers
+# We will read in U-indices and citations/year
+
+library(plotly)
+library(ggplot2)
 
 nPapers = 10
 citeDF = setNames(data.frame(matrix(ncol = 3, nrow = 0)), c("Year", "Citations", "Paper"))
