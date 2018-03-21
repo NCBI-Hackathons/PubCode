@@ -4,8 +4,6 @@ services:
   db:
     container_name: db
     image: postgres
-    environment:
-      - POSTGRES_PASSWORD=postgres
     ports:
       - 5432:5432
 
@@ -19,6 +17,8 @@ services:
 
   web:
     container_name: web
-    image: ./ui
+    image: sunnielyu/pubcode-web
     ports:
       - 8000:8000
+    links:
+      - server:server
