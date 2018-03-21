@@ -9,6 +9,7 @@
 <link href="css/pubcode-styles.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+<script src="entry-sample.js"></script>
 </head>
 <body class="entry">
    <header>
@@ -18,22 +19,28 @@
     </header>
     <section class="usa-grid">
         <div class="usa-width-one-whole">
-            <h1>Molmil</h1>
+            <div id="title"></div>
         </div>
         <div class="usa-width-two-thirds">
-                <dl class="metadata">
-                    <dt>PMID</dt> <dd>27570544</dd>
-                    <dt>PMCID</dt> <dd>PMC5002144</dd>
-                    <dt>DOI</dt> <dd> 10.1186/s13321-016-0155-1</dd>
-                    <dt>Date added</dt> <dd>03/21/2017</dd>
-                    <dt>Last update</dt> <dd>05/17/2017</dd>
-                    <dt>Authors</dt> <dd>Bekker GJ, Nakamura H, Kinjo AR</dd>
-                    <dt>Languages</dt> <dd>JavaScript, GLSL, Python, CSS</dd>
-                    <dt>OS</dt> <dd>Windows, Linux, iOS, Android</dd>
-                    <dt>Dependencies</dt> <dd>JQuery 3.3 and above</dd>
-                    <dt>Version</dt> <dd>1</dd>
-                    <dt>License</dt> <dd>GNU Lesser General Public License v3.0</dd>
+            <div class="usa-width-one-third">
+                <img src="img/molmill.jpg" alt="">
+                <img src="img/molmill2.jpg" alt="">
+            </div>
+            <div class="metadata usa-width-two-thirds">
+                <dl>
+                    <dt>PMID</dt> <dd><div id="pmid"></div></dd>
+                    <dt>PMCID</dt> <dd><div id="pmcid"></div></dd>
+                    <dt>DOI</dt> <dd> <div id="doi"></div></dd>
+                    <dt>Date added</dt> <dd><div id="date_added"></div></dd>
+                    <dt>Last update</dt> <dd><div id="last_update"></div></dd>
+                    <dt>Authors</dt> <dd><div id="authors"></div></dd>
+                    <dt>Languages</dt> <dd><div id="languages"></div></dd>
+                    <dt>OS</dt> <dd><div id="os"></div></dd>
+                    <dt>Dependencies</dt> <dd><div id="dependencies"></div></dd>
+                    <dt>Version</dt> <dd><div id="version"></div></dd>
+                    <dt>License</dt> <dd><div id="license"></div></dd>
                 </dl>
+            </div>
             <div class="clearfix">
             <ul class="usa-accordion-bordered">
                 <li>
@@ -58,12 +65,11 @@
                     </div>
                 </li>
             </ul>
+            </div>
         </div>
-        </div> 
-
 
         <div class="usa-width-one-third" style="margin:0">
-            <a href="https://github.com/gjbekker/molmil"><button>Get the code</button></a>
+            <div id="github_url"></div>
             <button class="usa-button-secondary">Live Demo</button>
             <p>Are you the author? Have a comment? <a href="">Email us.</a></p>
 
@@ -76,8 +82,31 @@
         </div>    
 
         <div class="usa-width-two-thirds">
-        
-    </div> 
+        <ul class="usa-accordion-bordered">
+            <li>
+                <button class="usa-accordion-button" aria-expanded="true" aria-controls="b-a1">
+                    Description</button>
+                <div id="b-a1" class="usa-accordion-content">
+                    <div id="description"></div>
+                    <p>We have developed a new platform-independent web-based molecular viewer using JavaScript and WebGL. The molecular viewer, Molmil, has been integrated into several services offered by Protein Data Bank Japan and can be easily extended with new functionality by third party developers. Furthermore, the viewer can be used to load files in various formats from the user's local hard drive without uploading the data to a server.</p>
+                </div>
+            </li>
+            <li>
+                <button class="usa-accordion-button" aria-controls="b-a2">
+                    Who should use this?</button>
+                <div id="b-a2" class="usa-accordion-content">
+                    <div id="who_should_use"></div>
+                </div>
+            </li>
+            <li>
+                <button class="usa-accordion-button" aria-controls="b-a3">
+                    How to use this?</button>
+                <div id="b-a3" class="usa-accordion-content">
+                    <div id="how_to_use"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
     
     </section>
     <script src="js/uswds.min.js"></script>
