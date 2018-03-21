@@ -42,6 +42,11 @@ At this moment, PubCode demos a selection of software with both scientific publi
 - Closed Issues
 
 ---
+## Future Directions
+Integration of a quality metric will require designation of attributes that indicate a code will be “successful”.
+- Citations/Year for various sequence aligners
+- Literature highlighting Bowtie v Bowtie2
+- u-INDEX Callahan et al. (2018)
 
 ## PubCode Team  
 [Michael Chambers](https://github.com/greenkidneybean) (Team Writer)  
