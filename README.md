@@ -24,6 +24,12 @@ At this moment, PubCode demos a selection of software with both scientific publi
 
 ---
 
+## Viewing how a group of software compares over time
+
+<TestCode/ExampleInteractiveLinePlots.html>
+
+---
+
 [<img src="img/pubcode-results.png">](site.link)
 
 ---

@@ -1,7 +1,20 @@
-library(reshape)
+---
+title: "Examples of interactive line plots for displaying software impact"
+output: html_document
+---
 
-##################################################
-# Create interactive plot for PMID citations each year
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+Below are examples of interactive line plots showing a metric (like number of citations or uIndex) for software over each year.
+
+```{r plot1, message = FALSE, echo=FALSE, cache=FALSE}
+library(ggplot2)
+library(plotly)
+library(reshape)
 
 dat <- read.csv("../docs/Data/CitationsYear.csv")
 dat <- dat[1:20,]
@@ -18,10 +31,9 @@ mdata$Software = as.character(mdata$Software)
 g <- ggplot(data=mdata, aes(x=Year, y=Citations, col=Software)) + geom_line() + theme(legend.position="none")
 # Plot interactive line plot
 ggplotly(g)
+```
 
-##################################################
-# Create interactive plot for u-Index values
-
+```{r plots2, message = FALSE, echo=FALSE, cache=FALSE}
 dat <- read.csv("../docs/Data/CitationsYearUIndex.csv")
 colnames(dat) <- c("Software", 2000:2015)
 mdata <- melt(dat, id=c("Software"))
@@ -34,3 +46,5 @@ mdata$Software = as.character(mdata$Software)
 g <- ggplot(data=mdata, aes(x=Year, y=uIndex, col=Software)) + geom_line() + theme(legend.position="none")
 # Plot interactive line plot
 ggplotly(g)
+```
+
