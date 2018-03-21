@@ -15,6 +15,7 @@ CREATE TABLE public.pubcode_table1
     "OS" character varying(20) COLLATE pg_catalog."default",
     "Dependencies" character varying(500) COLLATE pg_catalog."default",
     "Licensing" character varying(20) COLLATE pg_catalog."default",
+    "Version" varchar(10) COLLATE pg_catalog."default",
     "Keywords" character varying(500) COLLATE pg_catalog."default",
     "Dataset_IDs" character varying(20) COLLATE pg_catalog."default",
     "GitHub_URL" character varying(50) COLLATE pg_catalog."default",
@@ -22,6 +23,9 @@ CREATE TABLE public.pubcode_table1
     "GH_OpenIssues" integer,
     "GH_ClosedIssues" integer,
     "GH_DateUpdate" date,
+    "Description" varchar(1000) COLLATE pg_catalog."default",
+    "WhoShouldUse" varchar(1000) COLLATE pg_catalog."default",
+    "HowToUse" varchar(1000) COLLATE pg_catalog."default",
     CONSTRAINT "pubcode_table1_pkey" PRIMARY KEY ("CodeTitle", "PCID")
 )
 WITH (
