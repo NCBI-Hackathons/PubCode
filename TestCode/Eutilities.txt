@@ -1,0 +1,38 @@
+esearch -db pubmed -query "Beadle AND Tatum AND Neurospora" |
+  elink -related |
+  efilter -query "NOT historical article [FILT]" |
+  efetch -format docsum |
+  xtract -pattern DocumentSummary -if Author -and Title \
+    -element Id -first "Author/Name" -element Title |
+  grep -i -e enzyme -e synthesis |
+  sort -t $'\t' -k 2,3f |
+  column -s $'\t' -t |
+  head -n 10 |
+  cut -c 1-80
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~******************************
+  
+  
+  elink -related -name pubmed_pubmed_citedin |
+  
+  efilter options:
+    -days        Number of days in the past
+  -datetype    Date field abbreviation
+  -mindate     Start of date range
+  -maxdate     End of date range
+  
+  
+  
+  
+  
+  esearch -db pubmed -query "19261174" |
+  elink -related -name pubmed_pubmed_citedin |
+  efilter -query -days "365" |
+  efetch -format docsum |
+  xtract -pattern DocumentSummary -if Author -and Title \
+    -element Id -first "Author/Name" -element Title |
+  wc -l |
+  sort -t $'\t' -k 2,3f |
+  column -s $'\t' -t |
+  head -n 10 |
+  cut -c 1-80
+  

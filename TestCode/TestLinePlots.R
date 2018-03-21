@@ -5,9 +5,9 @@ citeDF = setNames(data.frame(matrix(ncol = 3, nrow = 0)), c("Year", "Citations",
 
 # Create a toy dataset
 for (i in 1:nPapers){
-  nYears = sample(3:10, 1, replace=T)
-  currCitations = sort(sample(20:100, nYears, replace=T))
   firstYear = sample(c(2010,2011,2012,2013,2014,2015,2016,2017), 1)
+  nYears = 2018-firstYear
+  currCitations = sort(sample(20:100, nYears, replace=T))
   currYear = seq(firstYear, firstYear+nYears-1, 1)
   if (i%%2==0){
     currCitations = sort(currCitations, decreasing = TRUE)
