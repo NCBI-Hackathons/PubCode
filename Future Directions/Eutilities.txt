@@ -1,0 +1,131 @@
+Future Directions:
+
+Eutilities for Software Useage
+
+INSTALL EDIRECT and dependencies
+
+Set path to edirect:
+PATH=$PATH:$HOME/edirect
+
+EDIRECT READ ME EXAMPLE SET:
+esearch -db pubmed -query "Beadle AND Tatum AND Neurospora" |
+  elink -related |
+  efilter -query "NOT historical article [FILT]" |
+  efetch -format docsum |
+  xtract -pattern DocumentSummary -if Author -and Title \
+    -element Id -first "Author/Name" -element Title |
+  grep -i -e enzyme -e synthesis |
+  sort -t $'\t' -k 2,3f |
+  column -s $'\t' -t |
+  head -n 10 |
+  cut -c 1-80
+
+################################################################
+
+#TEMPLATE FOR PM CITATIONS/YEAR QUERY
+
+  for i in {<PUBDATE_MIN>..<PUBDATE_MAX>}
+do
+   esearch -db pubmed -query "<PMID>" |
+  elink -related -name pubmed_pubmed_citedin |
+  efilter -query "$i [PDAT]" |
+  efetch -format docsum |
+  xtract -pattern DocumentSummary -if Author -and Title \
+    -element Id -first "Author/Name" -element Title |
+  wc -l |
+  sort -t $'\t' -k 2,3f |
+  column -s $'\t' -t |
+  head -n 10 |
+  cut -c 1-80
+done
+
+#Search for <MESH TERM> articles published/year
+
+    for i in {<PUBDATE_MIN>..<PUBDATE_MAX>}
+do
+esearch -db pubmed -query "<MESH TERM>" |
+  elink -related |
+  efilter -query "$i [PDAT]" |
+  efetch -format docsum |
+  xtract -pattern DocumentSummary -if Author -and Title \
+    -element Id -first "Author/Name" -element Title |
+  wc -l |
+  sort -t $'\t' -k 2,3f |
+  column -s $'\t' -t |
+  head -n 10 |
+  cut -c 1-80
+###############################################################
+
+##EXAMPLES
+CITATIONS/YEAR
+    for i in {2009..2018}
+do
+  esearch -db pubmed -query "28039163" |
+  elink -related -name pubmed_pubmed_citedin |
+  efilter -query "$i [PDAT]" |
+  efetch -format docsum |
+  xtract -pattern DocumentSummary -if Author -and Title \
+    -element Id -first "Author/Name" -element Title |
+  wc -l |
+  sort -t $'\t' -k 2,3f |
+  column -s $'\t' -t |
+  head -n 10 |
+  cut -c 1-80
+done
+
+SEARCH FOR RNA-SEQ PUBLISHED/YEAR (MULTIPLE MESH TERMS)
+    for i in {2009..2018}
+do
+esearch -db pubmed -query "RNA-seq AND RNAseq AND RNA sequencing" |
+  elink -related |
+  efilter -query "$i [PDAT]" |
+  efetch -format docsum |
+  xtract -pattern DocumentSummary -if Author -and Title \
+    -element Id -first "Author/Name" -element Title |
+  wc -l |
+  sort -t $'\t' -k 2,3f |
+  column -s $'\t' -t |
+  head -n 10 |
+  cut -c 1-80
+  done
+
+Search for SEQ ALIGNMENT articles published/year (SINGLE MESH TERM)
+    for i in {2009..2018}
+do
+esearch -db pubmed -query "SEQ ALIGNMENT" |
+  elink -related |
+  efilter -query "$i [PDAT]" |
+  efetch -format docsum |
+  xtract -pattern DocumentSummary -if Author -and Title \
+    -element Id -first "Author/Name" -element Title |
+  wc -l |
+  sort -t $'\t' -k 2,3f |
+  column -s $'\t' -t |
+  head -n 10 |
+  cut -c 1-80
+  done
+  
+  ################################################################
+MISC. NOTES:  
+
+Eutilities Guide:  
+  http://www.ncbi.nlm.nih.gov/books/NBK179288
+
+Articles citing PM article:
+  elink -related -name pubmed_pubmed_citedin |
+  
+efilter options:
+    -days        Number of days in the past
+  -datetype    Date field abbreviation
+  -mindate     Start of date range
+  -maxdate     End of date range
+  
+RNA-seq MESH Terms: 
+RNA-seq|RNAseq|RNA sequencing
+  
+Loop template:  
+  for i in {2009..2018}
+do
+ echo $i
+done
+
