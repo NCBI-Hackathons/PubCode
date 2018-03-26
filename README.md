@@ -32,13 +32,9 @@ At this moment, PubCode demos a selection of software with both scientific publi
 
 Another group recently has developed the u-Index of a similar metric comparing software impact over time under the argument that success is directly proportional to the ratio of usage citations to awareness citations, and indirectly proportional to the number of years since the code was published Callahan et al. (2018). An index like this would complement the other features of PubCode very well.
 
-As part of their communication to users about how different software within a cluster were having impact over time, they showed line plots that were static and could be difficult to zoom into the details.
+As part of their communication to users about how different software within a cluster were having impact over time (as measured by U-Index), they showed line plots that were static and could be difficult to zoom into the details. An example is in the static Figure 2 of their paper. We recreated a similar plot demonstrating software U-Index score over time using an interactive line plot that allow users to hover and retrieve information as well as zooming and panning functionality. Hence, if we were to use a similar feature in PubCode, we could consider creating an interactive line plot showing the U-Index of a cluster of similar software.
 
-[<img src="img/Figure2B-UIndex.jpg">](site.link)
-
-We recreated similar plots demonstrating software impact over time using interactive line plots that allow users to hover and retrieve information as well as zooming and panning functionality. In the first plot below, we are looking at Bowtie and 19 other alignment software to examine how their citation count has changed over each year. We see that Bowtie is still the most popular, but that its popularity in terms of citations has reached a plateau. In the second plot below, we look at four example softwares with u-Index over time.
-
-https://github.com/NCBI-Hackathons/PubCode/blob/master/TestCode/ExampleInteractiveLinesPlots.html
+An example of the static plot of Figure 2 from Callahan et al. (2018) and its interactive version we created can be viewed at: https://pubcode.shinyapps.io/interactiveuindex/
 
 ---
 

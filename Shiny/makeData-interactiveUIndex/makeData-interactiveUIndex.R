@@ -1,8 +1,5 @@
 library(data.table)
-library(ggplot2)
-library(plotly)
 
-# Read UI-index datasets from Callahan, A. et al. doi: 10.1038
 datList = list()
 k = 143619
 for (i in 2000:2015){
@@ -37,11 +34,4 @@ df$Year = as.numeric(as.character(df$Year))
 df$uIndex = as.numeric(as.character(df$uIndex))
 df$Paper = as.character(df$Paper)
 
-# Create static plot using ggplot package
-g <- ggplot(data=df, aes(x=Year, y=uIndex, col=Paper)) + geom_line()
-# Create interactive plot using ggplotly package
-gp <- ggplotly(g)
-# Plot interactive plot
-gp
-
-
+save(df, file="df.rda")
