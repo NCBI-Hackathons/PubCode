@@ -4,6 +4,8 @@ library(data.table)
 library(ggplot2)
 library(plotly)
 
+# This file can be recreated in a reproducible fashion by running the script
+# ../makeData-interactiveUIndex/makeData-interactiveUIndex.R
 load("df.rda")
 
 # Create static plot using ggplot package
