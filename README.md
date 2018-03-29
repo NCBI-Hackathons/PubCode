@@ -1,7 +1,5 @@
 # PubCode
 ## Code for the Scientific Community
-
-## [Link to PubCode](site.link)
 ---  
 
 [<img src="img/pubcode-search.png">](site.link)
