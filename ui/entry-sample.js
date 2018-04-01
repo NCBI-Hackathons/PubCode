@@ -17,8 +17,9 @@ function getEntrySample() {
                 keywords = '';
 
             if(item.Keywords) {
-                for(key in item.Keywords) {
-                    keywords += '<span>' + item.Keywords[key] + '</span>';
+                var arr = item.Keywords.split(',');
+                for(key in arr) {
+                    keywords += '<span>' + arr[key] + '</span>';
                 }
             }
 
