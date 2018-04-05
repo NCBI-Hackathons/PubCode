@@ -52,8 +52,11 @@ function update(req, res) {
 }
 
 function find(req, res) {
-    let query = req.body.query;
-    return knex.select().table(PUBCODE_TABLE).where('CodeTitle', 'like', `%${query}%`).then((data) => {
+    let query = '%' + req.body.query.toLowerCase() + '%';
+    return knex.select().table(PUBCODE_TABLE).where(knex.raw('LOWER("CodeTitle") like ?', [query]))
+        .orWhere(knex.raw('LOWER("Keywords") like ?', [query]))
+        .orWhere(knex.raw('LOWER("PMID") like ?', [query]))
+        .then((data) => {
         res.status(200).json(data);
     }).catch((err) => {
         res.status(500).send(err);
