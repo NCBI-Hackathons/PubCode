@@ -20,11 +20,11 @@ app.all('*', function(req, res, next) {
 });
 
 app.get('/items', routes.getAll);
-// app.get('/item/:id', routes.getOne);
-// app.get('/new', routes.getNew);
-// app.post('/add', routes.add);
-// app.post('/find', routes.find);
-// app.put('/item/:id', routes.update);
+app.get('/item/:id', routes.getOne);
+app.get('/new', routes.getNew);
+app.post('/add', routes.add);
+app.post('/find', routes.find);
+app.put('/item/:id', routes.update);
 
 app.set('port', process.env.PORT || 5000);
 

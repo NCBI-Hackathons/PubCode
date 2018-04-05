@@ -4,14 +4,12 @@ services:
   db:
     container_name: db
     image: postgres
-    environment:
-      - POSTGRES_PASSWORD=postgres
     ports:
       - 5432:5432
 
   server:
     container_name: server
-    image: ./Dockerfile.server
+    image: sunnielyu/pubcode-server
     ports:
       - 5000:5000
     links:
@@ -19,6 +17,8 @@ services:
 
   web:
     container_name: web
-    image: ./Dockerfile.web
+    image: sunnielyu/pubcode-web
     ports:
       - 8000:8000
+    links:
+      - server:localhost
