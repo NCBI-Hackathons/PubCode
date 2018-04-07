@@ -7,9 +7,11 @@
 
 <link href="css/uswds.min.css" rel="stylesheet">
 <link href="css/pubcode-styles.css" rel="stylesheet">
+
+<script src="home.js"></script>
 </head>
 <body>
-   <header>
+    <header>
         <div class="usa-grid">
             <img src="img/ncbi-logo.png" alt="NCBI" />  
         </div>      
@@ -20,13 +22,13 @@
             </div>
             <div class="usa-width-three-thirds">
             <div role="search">
-                <form class="usa-search usa-search-big">
+                <div class="usa-search usa-search-big">
                     <label class="usa-sr-only" for="search-field-big">Search PubCode</label>
                     <input id="search-field-big" type="search" name="search">
-                    <button type="submit">
+                    <button onclick="search()">
                         <span class="usa-search-submit-text">Search</span>
                     </button>
-                </form>
+                </div>
             </div>
             </div>
             <h2>Find &middot; Cite &middot; Download Scientific Code.</h2>
@@ -37,7 +39,7 @@
     <section class="action-bar">
         <div class="usa-grid">
         <div class="usa-width-one-half">
-            <h2>Have you created some cool code?</h2>
+            <h2>Are you a publisher?</h2>
             <button class="usa-button-secondary">Submit your code</button>
         </div>
 
@@ -51,8 +53,7 @@
     <div class="usa-grid">
     <section class="description">
         <div class="usa-width-two-thirds">
-            <h3>PubCode is a platform of scientific code for developers, librarians and researchers.</h3>
-        <p>PubCode is a prototype platform for developers to present their code in a formal environment, while showcasing useful metadata for researchers regarding the development, upkeep, and activity levels of their code to prospective users.  Enhancing the users search for an appropriate tool for their given task provides an incentive to cite of these open source tools, providing further interest in both its use and further development.</p>
+            <h3 class="standout">PubCode is a platform of scientific code for developers, librarians, researchers and more.</h3>
         </div>
         <div class="usa-width-one-third"> 
             <img src="img/laptop-code.png" alt="" />
@@ -66,33 +67,35 @@
         </div>
         <div class="usa-width-two-thirds">
             <h4>Search our growing library for the tools to make the next big discovery.</h4>
-            <p>Find code from top publications in cutting-edge fields like Artificial Intelligence, Genomics, and Neuroscience.</p>
+            <p>Find code in cutting-edge fields like machine learning, precision medicine, and neuroscience.</p>
         </div>
     </div>
 
-    <div>
-        <div class="usa-width-two-thirds">
-            <h4>Get credit for your code.</h4>
-            <p>With unique identifiers associated with author name and version, authors can easily share metrics on usage.</p>
+	<div>
+		<div class="usa-width-two-thirds">
+            <h4>Save time in reproducing scientific findings.</h4>
+            <p>We make it possible for you to find the methods that you need.</p>
         </div>
-        <div class="usa-width-one-third">
-            <img src="img/credit-icon.png" />
-        </div>
-    </div>
-
-    <div>
         <div class="usa-width-one-third">
             <img src="img/time-icon.png" />
         </div>
-        <div class="usa-width-two-thirds">
-            <h4>Save time in reproducing other people’s work.</h4>
-            <p>We gather code from journals that require code to be documented and open source. </p>
+    </div>   
+
+    <div>
+    	<div class="usa-width-one-third">
+            <img src="img/credit-icon.png" />
         </div>
-    </div>    
+        <div class="usa-width-two-thirds">
+            <h4>Get credit for your code.</h4>
+            <p>With unique identifiers associated with author name and version, authors can easily share metrics on how their code is cited.</p>
+        </div>
+    </div>
+
+     
 
     </section>
     
-    <section>
+    <!-- <section>
         <div class="usa-width-one-half">
             <h2>Popular Submissions</h2>
             <ul>
@@ -109,7 +112,7 @@
                     <li><a href="">Sample</a></li>
                 </ul>
             </div>
-    </section>
+    </section> -->
 </div>
     <script src="js/uswds.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
