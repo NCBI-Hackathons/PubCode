@@ -1,8 +1,8 @@
 header {
     background: #205493;
-    padding:0.3em 0;}
-header img { width:300px;}
-header { display:none; } /* removes NLM logo */ 
+    padding:0.7em 0 0.5em 0;
+    margin-bottom:1em;}
+header img { width:200px;}
 .usa-width-two-thirds:first-child>:first-child {margin: .67em 0;}
 
 section { margin-bottom:3em;overflow:hidden;}
@@ -53,7 +53,6 @@ section.features .usa-width-two-thirds h4 { margin-top:3em;}
     font-size: 1.4em;
     margin-top:0;}
 .code-summary h2 a { text-decoration: none;}
-.entry .usa-grid {background: #fff;}
 .entry img {padding:5px;}
 .entry .usa-width-one-whole:first-child>:first-child {
     margin-bottom: .5em;
