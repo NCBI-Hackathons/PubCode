@@ -1,11 +1,8 @@
-body.results, body.entry { background-image: url(../img/code-rain.png);
-    background-repeat: repeat-x;
-    background-size: 40%;}
 header {
     background: #205493;
-    padding:0.3em 0;}
-header img { width:300px;}
-header { display:none; } /* removes NLM logo */ 
+    padding:0.7em 0 0.5em 0;
+    margin-bottom:1em;}
+header img { width:200px;}
 .usa-width-two-thirds:first-child>:first-child {margin: .67em 0;}
 
 section { margin-bottom:3em;overflow:hidden;}
@@ -15,10 +12,10 @@ section.search-box {
     background-repeat: repeat-x;
     background-size: 30%;
     background-blend-mode: difference;
-    height:40vh;
+    height:30vh;
     text-align: center;
     color:#fff;
-    padding:15vh;
+    padding:10vh;
     margin-bottom:0}
 section.search-box h1 {
     display: inline-block;}
@@ -35,6 +32,7 @@ section.action-bar h2 {
     font-family: "Source Sans Pro", Arial, sans-serif;
     font-size:1em;
     margin-right:1em;}
+h3.standout { font-size:2.2em; font-weight:100; line-height:1.6; }
 section.features > div {
     margin:2em;
     padding:1em 3em;
@@ -55,7 +53,6 @@ section.features .usa-width-two-thirds h4 { margin-top:3em;}
     font-size: 1.4em;
     margin-top:0;}
 .code-summary h2 a { text-decoration: none;}
-.entry .usa-grid {background: #fff;}
 .entry img {padding:5px;}
 .entry .usa-width-one-whole:first-child>:first-child {
     margin-bottom: .5em;
