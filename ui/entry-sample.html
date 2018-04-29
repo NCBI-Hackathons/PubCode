@@ -14,7 +14,7 @@
 <body class="entry">
    <header>
         <div class="usa-grid">
-            <img src="img/ncbi-logo.png" alt="NCBI" />  
+            <img src="img/pubcode-logo.png" alt="PubCode" />  
         </div>      
     </header>
     <section class="usa-grid">
@@ -59,22 +59,31 @@
         <div class="usa-width-two-thirds">
         <ul class="usa-accordion-bordered clearfix">
             <li>
-                <button class="usa-accordion-button" aria-expanded="true" aria-controls="b-a1">
-                    Description</button>
+                <button class="usa-accordion-button" aria-expanded="true" aria-controls="b-a1">Description</button>
                 <div id="b-a1" class="usa-accordion-content">
-                    <div id="description"></div>
+                    <div id="description">
+                        <h3>Introduction</h3>
+                        <p>Molmil is a feature-rich molecular viewer which has support for many file formats. This page describes the basic usage of Molmil.</p>
+                    </div>
                 </div>
             </li>
             <li>
-                <button class="usa-accordion-button" aria-controls="b-a2">
-                    Who should use this?</button>
+                <button class="usa-accordion-button" aria-controls="b-a2">Quick Start</button>
                 <div id="b-a2" class="usa-accordion-content">
-                    <div id="who_should_use"></div>
+                    <div id="who_should_use">
+                        <div class="markdown-body">
+                            <h3>Controls</h3>
+                            <p>After loading a structure in Molmil (e.g. <a href="http://gjbekker.github.io/molmil/#molmil.loadPDB('1crn')" rel="nofollow">1crn</a>), the structure can be rotated by pressing and holding the left mouse button and moving the mouse left-to-right and top-to-bottom. To zoom in or zoom out either use the mouse's scroll button or hold the mouse's right button and move the mouse top-to-bottom.</p>
+                            <p>To find out more information about a specific atom or secondary structure element, right click on the atom or secondary structure element. This shows a popup menu with additional information as well as some controls to change the rendering style as well as the color of the atom (or the residue/chain it's part of).</p>
+                            <p>Selecting multiple atoms enables users to calculate the distance, angle and dihedral angle between atoms. Furthermore, pressing and holding the <code>Ctrl</code> button after selecting an atom will temporarily recenter the camera to rotate around the selected atom.</p>
+                            <p>On touch-screen interfaces such as tablets and smartphones, swipe the image to the left, right, top or bottom to rotate the image. Use a pinching motion with two fingers to zoom in or zoom out. To move the image, use two fingers to swipe to the left, right, top or bottom. To select an atom or secondary structure element, press and hold on the atom for about a second and the popup menu will show up.</p>
+                            <p>In the top left corner the main menu can be found which can be used to load files from the local hard drive or load a PDB entry or chem_comp entry by ID. Via this menu screenshots and movies (if additional software is running on the users' client machine) can be made and the scene can be exported as a .ply or .stl file (which can be used by many 3D printing software packages). Finally, a settings menu and full-screen option is available from the main menu.</p>
+                            <p>In the top right corner is the scene menu which lists which entries have been loaded and can also be used to change the styling and coloring of entries, chains and residues.</p>
+                    </div>
                 </div>
             </li>
             <li>
-                <button class="usa-accordion-button" aria-controls="b-a3">
-                    How to use this?</button>
+                <button class="usa-accordion-button" aria-controls="b-a3">Documentation</button>
                 <div id="b-a3" class="usa-accordion-content">
                     <div id="how_to_use"></div>
                 </div>
